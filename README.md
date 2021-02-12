@@ -12,5 +12,5 @@ merci à ces designers talentueux pour leurs travails
   <img src="img/social_media.PNG" width="300" height="100">
 - Music App  
   <img src="img/streaming.PNG" width="300" height="100">
-- Music App 2 
+- Music App 2  
   <img src="img/music_app2.PNG" width="300" height="100">
