@@ -1,5 +1,7 @@
 # Templates
-touts mes templates HTML, CSS et Javascript
+touts mes templates HTML, CSS et Javascript.
+la plupart des ces templates étaient à l'origine des shots <a href="https://dribbble.com/">dribbble<a>, je me suis donnée comme petit défi personnel de les transformer en page web. 
+merci à ces designers talentueux pour leurs travails
 ***
 #Listes des projets 
 - E-commerce 1  
@@ -11,4 +13,4 @@ touts mes templates HTML, CSS et Javascript
 - Music App  
   <img src="img/streaming.PNG" width="300" height="100">
 - Music App 2 
-<img src="img/music_app2.PNG" width="300" height="100">
+  <img src="img/music_app2.PNG" width="300" height="100">
