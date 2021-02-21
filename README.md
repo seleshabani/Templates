@@ -14,3 +14,6 @@ merci à ces designers talentueux pour leurs travails
   <img src="img/streaming.PNG" width="300" height="100">
 - Music App 2  
   <img src="img/music_app2.PNG" width="300" height="100">
+- Blog  
+  <img src="img/blog.PNG" width="300" height="100">
+  
