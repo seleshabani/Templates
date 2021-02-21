@@ -17,5 +17,5 @@ merci à ces designers talentueux pour leurs travails
 - Blog  
   <img src="img/blog.PNG" width="300" height="100">
 - dark portfolio  
-  <img src="img/blog.PNG" width="300" height="100">dark_portfolio_v4 
+  <img src="img/portfolio_v4 .PNG" width="300" height="100">
   
