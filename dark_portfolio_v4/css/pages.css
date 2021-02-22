@@ -159,9 +159,8 @@ main .projects-screens .item .text,
 /* Blog */
 .blog-items{
     width: 100%;
-    column-width: 420px;
-    column-gap: 15px;
-    column-fill: auto;
+    display: flex;
+    flex-direction: row;
 }
 .blog-items .item{
     display: flex;

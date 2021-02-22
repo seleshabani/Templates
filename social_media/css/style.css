@@ -359,7 +359,8 @@ hr{
 /* aside */
 
 .aside{
-    flex: 2;
+    /* flex: 2; */
+    width: 20%;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
