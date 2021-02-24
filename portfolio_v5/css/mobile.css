@@ -1,0 +1,76 @@
+@media(max-width:800px){
+    body::before{
+        height: 250px;
+        background-size: cover;
+    }
+    body main{
+        width: 95%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 100px;
+        gap: 1em;
+    }
+    header .profil-resume{
+        width: 100%;
+        /* transform: translateY(-40px); */
+        line-height: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    header .profil-resume h1{
+        font-size: 1em;
+    }
+    header .profil-img{
+        width: 200px;
+        box-shadow: 5px 5px 2px 3px var(--text-title-color);
+    }
+    header .profil-resume .social-links{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    section .section-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+    section .section-row .s-row-title{
+        font-size: 1.4em;
+        width: 100%;
+    }
+    section .section-row .s-row-title::before{
+        content: '';
+        width: 130px;
+        height: 1px;
+        position: absolute;
+        bottom: 50%;
+        left: 0%;
+        background-color: var(--border-bg-color);
+        z-index: -1;
+    }
+    section .section-row .s-row-title::after{
+        content: '';
+        width: 100px;
+        height: 1px;
+        position: absolute;
+        left: 65%;
+        top: 50%;
+        background-color: var(--border-bg-color);
+        z-index: -1;
+    }
+}
