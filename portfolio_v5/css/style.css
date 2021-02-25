@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color:#dfe0e2;
+    --main-bg-color:#DFE0E2;
     --link-color:#9e1d1c;
     --text-title-color:#b7999c;
     --text-p-color:#445560;
@@ -32,7 +32,7 @@ a{
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(180deg, #dfe0e2be, #dfe0e2be);
+    background: var(--main-bg-color);
     /* background: var(--main-bg-color); */
     position: relative;
     display: flex;
@@ -56,6 +56,17 @@ body::before{
 }
 body main{
     width: 85%;
+    position: relative;
+}
+body main::after{
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    background-color: #aaaaaa;
+    left: 10%;
+    top: 10%;
+    z-index: -1;
 }
 header{
     height: 300px;
@@ -97,52 +108,32 @@ header .profil-resume .social-links a{
     font-size: 1.2em;
 }
 main section{
-    flex-direction: column;
-    margin-top: 35px;
-}
-section .section-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     align-items: baseline;
-}
-section .section-row .s-row-title{
-    width: 20%;
-    text-align: center;
-    font-size: 1.9em;
-    padding: 3px;
-    background: #e7e7e9;
-    /* background: linear-gradient(180deg,#dfe0e2e1 ,#dfe0e231); */
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
     position: relative;
 }
-section .section-row .s-row-title::before{
-    content: '';
-    width: 1px;
+main section h2{
+    width: 25%;
     height: 50px;
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    background-color: var(--border-bg-color);
-    z-index: -1;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    font-size: 3em;
+    background: var(--main-bg-color);
 }
-section .section-row .s-row-title::after{
-    content: '';
-    width: 1px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 110%;
-    background-color: var(--border-bg-color);
-    z-index: -1;
+main section:last-of-type{
+    background: var(--main-bg-color);
 }
-section .section-row .s-row-content{
-    width: 75%;
-    line-height: 1.5em;
-}
-section .section-row .s-row-content h1{
-    color: var(--text-p-color);
-    font-weight: normal;
-    
+main section .content{
+    width: 70%;
+    font-size: 1.3em;
 }
 
 /* section .section-row  */

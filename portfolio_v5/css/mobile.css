@@ -42,35 +42,21 @@
         flex-wrap: wrap;
         gap: 1em;
     }
-    section .section-row{
+    body main::after{
+        display: none;
+    }
+    body main section{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
+    }
+    body main section h2,
+    body main section .content{
         width: 100%;
     }
-    section .section-row .s-row-title{
-        font-size: 1.4em;
-        width: 100%;
-    }
-    section .section-row .s-row-title::before{
-        content: '';
-        width: 130px;
-        height: 1px;
-        position: absolute;
-        bottom: 50%;
-        left: 0%;
-        background-color: var(--border-bg-color);
-        z-index: -1;
-    }
-    section .section-row .s-row-title::after{
-        content: '';
-        width: 100px;
-        height: 1px;
-        position: absolute;
-        left: 65%;
-        top: 50%;
-        background-color: var(--border-bg-color);
-        z-index: -1;
+    body main section h2{
+        font-size: 1.3em;
+        padding: 5px;
     }
 }
+    
