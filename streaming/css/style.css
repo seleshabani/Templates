@@ -9,15 +9,18 @@
    --text-color3:#c2c0d7;
    --menu-width:20%;
 }
+html{
 
-body{
     box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
     margin: 0;
     padding: 0;
     background-color: var(--main-color);
-}
-*::after,*::before{
-    box-sizing: inherit;
 }
 main {
     display: flex;

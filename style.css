@@ -38,6 +38,7 @@ main .item{
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: all 300ms;
+    object-fit:cover;
 }
 main .item:hover{
     transform: translateY(5px);

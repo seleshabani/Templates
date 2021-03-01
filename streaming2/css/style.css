@@ -296,7 +296,7 @@ main .sidebar * a{
     padding-top: 10px;
     height: 90%;
     overflow: scroll;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .content-elts .top-album-area{
     display: flex;
