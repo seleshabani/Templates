@@ -11,14 +11,15 @@
     --text-color:rgb(77,75,79);
     --brand-color:rgb(231,80,43);
 }
-
-body{
+html{
     box-sizing: border-box;
+}
+body{
     margin: 0;
     padding: 0;
     background-color: var(--section-backgroundColor);
 }
-*::after,*::before{
+*,*::after,*::before{
     box-sizing: inherit;
 }
 .btn{
@@ -43,7 +44,7 @@ body{
 /* menu */
 
 .menu{
-    height: 35px;
+    height: 45px;
     box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.2);
     padding-left: 106px;
     padding-right: 106px;
@@ -86,7 +87,7 @@ body{
 }
 .menu .menu-form .input-search{
     width: 70%;
-    height: 25px;
+    height: 30px;
     border-radius: 35px;
     background-color: var(--section-backgroundColor);
     padding: 5px;

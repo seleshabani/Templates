@@ -10,7 +10,6 @@
    --menu-width:20%;
 }
 html{
-
     box-sizing: border-box;
 }
 
@@ -35,9 +34,10 @@ main .menu{
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: 95vh;
     width: var(--menu-width);
     position: fixed;
+    margin-bottom: 10px;
     /* padding-bottom: 100px; */
     /* z-index: 2; */
 }
@@ -250,6 +250,7 @@ main .menu{
     align-items: flex-start;
     align-content: flex-start;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 .content .app-content .app-content-main{
     display: flex;
@@ -297,7 +298,7 @@ main .menu{
     color: var(--text-color3);
     margin-bottom: 5px;
     font-weight: bolder;
-    height: 20px;
+    height: 30px;
     padding: 5px;
     position: relative;
 }
@@ -361,9 +362,10 @@ main .menu{
     height: 180px;
     display: flex;
     flex-direction: column;
+    /* line-height: 5%; */
     /* justify-content: space-between; */
     /* border: solid 1px red; */
-    padding-bottom:15px ;
+    /* padding-bottom:15px ; */
 }
 .recommandation .recommandation-items 
 .recommandation-items-item .item-img{
@@ -380,15 +382,19 @@ main .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
+    align-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
     height: 55px;
     padding-left: 5px;
+    padding-bottom: 15px;
     background-color: var(--secondary-color);
 }
 .recommandation .recommandation-items 
 .recommandation-items-item .item-text h3{
     font-size: 1rem;
+    line-height: 15px;
+   overflow: hidden;
 }
 .recommandation .recommandation-items 
 .recommandation-items-item .item-text .autor span{
@@ -430,10 +436,11 @@ main .menu{
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
     padding: 10px;
     background-color: var(--secondary-color);
     color: var(--text-color2);
+    line-height: 0px;
 }
 .app-content-aside .comments-section .items .items-item .item-img{
     height: 100%;
@@ -460,8 +467,8 @@ main .menu{
     left: 0;
     right: 0;
     bottom: 0;
-    width: 93%;
-    height: 30px;
+    width: 100%;
+    height: 50px;
     border-radius: 0px;
     background-color: var(--player-background-color);
     padding-top: 12px;
