@@ -16,7 +16,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-   
 }
 main{
     width: 85%;
@@ -132,49 +131,43 @@ main{
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 60%;
+    width: 40%;
 }
 .base-menu .menu-widgets .dark-mode-handler i{
     color: var(--secondary-color);
-    width: 10%;
+    width: 50%;
+    text-align: right;
 }
-.base-menu .menu-widgets .dark-mode-handler i:first-of-type{
-    margin-right: 5px;
-}
-.base-menu .menu-widgets .dark-mode-handler i:last-of-type{
-    margin-left: 2px;
-}
-.base-menu .menu-widgets .dark-mode-handler .input{
-    width: 60%;
-    height: 20px;
-    position: relative;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-}
-.base-menu .menu-widgets .dark-mode-handler .input::before{
-    content: '';
+.base-menu .menu-widgets .dark-mode-handler input{
     position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: white;
-    left: 0;
-    cursor: pointer;
-    transition: all 300ms ease;
+    opacity: 0;
 }
-.base-menu .menu-widgets .dark-mode-handler .input::before:hover{
+.base-menu .menu-widgets .dark-mode-handler label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    /* border: solid 1px var(--secondary-color); */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.base-menu .menu-widgets .dark-mode-handler label .ball{
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    border: solid 1px var(--secondary-color);
+    transition: transform 300ms linear;
+}
+.base-menu .menu-widgets .dark-mode-handler input:checked + label .ball{
     transform: translateX(50px);
 }
-.base-menu .menu-widgets .dark-mode-handler .input input{
-    visibility: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -5px;
-    bottom: 0;
-    z-index: 1;
-    cursor: pointer;
-}
+
 
 /* brand */
 
