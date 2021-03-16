@@ -1,4 +1,5 @@
-const texts = ['web developeur. 👨🏿‍💻', 'ui designer'];
+const texts = ['web developeur. 👨🏿‍💻', 'ui designer.'];
+const contents = document.querySelectorAll('section .content');
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -19,3 +20,21 @@ let letter = '';
 
     setTimeout(type, 300)
 })();
+
+function scrollApear() {  
+    contents.forEach(function (content) {
+        let contentPosition = content.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight /2;
+
+        if (contentPosition < screenPosition) {
+            content.classList.add('content-appear');
+        }
+    })
+
+
+}
+window.addEventListener('scroll',scrollApear);
+
+window.addEventListener('load',function () {
+    contents[0].classList.add('content-appear');
+})
