@@ -38,3 +38,8 @@ window.addEventListener('scroll',scrollApear);
 window.addEventListener('load',function () {
     contents[0].classList.add('content-appear');
 })
+
+window.addEventListener('mousemove',(e)=>{
+    const img = document.querySelector('img');
+    img.style.transform = `translateY(${e.clientY/120}px) translateX(${e.clientX/400}px)`;
+})
