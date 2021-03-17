@@ -112,6 +112,7 @@ header .profil-resume .typing::after{
     position: absolute;
     right: -5px;
     animation: blink 0.5s infinite ease;
+    animation-delay: 1s;
 }
 header .profil-resume .social-links{
     display: flex;

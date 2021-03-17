@@ -21,19 +21,40 @@ let letter = '';
     setTimeout(type, 300)
 })();
 
-function scrollApear() {  
-    contents.forEach(function (content) {
-        let contentPosition = content.getBoundingClientRect().top;
-        let screenPosition = window.innerHeight /2;
-
-        if (contentPosition < screenPosition) {
-            content.classList.add('content-appear');
+const options = {
+    Root:null,
+    rootMargin:'-100px',
+    threeshold:1.0
+}
+const observerCallback = (entryes,observer)=>{
+    entryes.forEach(entry=>{
+        if (!entry.isIntersecting) {
+            entry.target.classList.remove('content-appear');
+        }else{
+            let contentPosition = entry.target.getBoundingClientRect().top;
+            let screenPosition = window.innerHeight;
+    
+            if (contentPosition < screenPosition) {
+                entry.target.classList.add('content-appear');
+            }
         }
     })
-
-
 }
-window.addEventListener('scroll',scrollApear);
+const observer = new IntersectionObserver(observerCallback,options);
+contents.forEach(function (content) {
+    observer.observe(content)
+})
+// function scrollApear() {  
+//     contents.forEach(function (content) {
+//         let contentPosition = content.getBoundingClientRect().top;
+//         let screenPosition = window.innerHeight /2;
+
+//         if (contentPosition < screenPosition) {
+//             content.classList.add('content-appear');
+//         }
+//     })
+// }
+// window.addEventListener('scroll',scrollApear);
 
 window.addEventListener('load',function () {
     contents[0].classList.add('content-appear');
