@@ -1,5 +1,5 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-		anchors: ['intro','about','realisations'],
+		anchors: ['intro','about','skills','contact'],
 	});
 });
