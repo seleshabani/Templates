@@ -1,0 +1,77 @@
+:root{
+    --btn-color:#d63484;
+}
+body{
+    color: whitesmoke;
+    background-image: url(../img/sele.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.glass-btn{
+    background: linear-gradient(to left bottom,rgba(255, 255, 255, 0.075),rgba(255, 255, 255, 0.185));;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 5px;
+}
+.section{
+    background-image: url(../img/sele.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+.section.first .pp-tableCell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.section.first .pp-tableCell .text{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+.section.first .pp-tableCell .text h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.section.first .pp-tableCell .actions{
+    width: 40%;
+    margin-top: 10px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section.first .pp-tableCell .actions .glass-btn{
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.section.first .pp-tableCell .actions .glass-btn .g-btn-text{
+    text-transform: capitalize;
+}
