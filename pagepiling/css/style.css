@@ -23,7 +23,7 @@ input,textarea{
     background: var(--glass-bg);
     backdrop-filter: blur(1px);
     color: whitesmoke;
-    padding: 2px;
+    padding: 4px;
     border: none;
     border-radius: 3px;
 }
