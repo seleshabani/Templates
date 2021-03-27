@@ -151,16 +151,33 @@ header .socials-links .icones a{
 nav{
     background-color: var(--btn-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    max-height: 50px;
+    padding: 0px;
 }
 nav ul{
     list-style: none;
     width: 80%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+nav ul li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: var(--line-color);
+    color: white;
 }
 nav a{
     color: whitesmoke;
