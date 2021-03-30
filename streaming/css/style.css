@@ -263,6 +263,7 @@ main .menu{
 .content .app-content .app-content-main .hero{
     height: 250px;
     cursor: pointer;
+    width: 100%;
 }
 .content .app-content .app-content-main .hero img{
     width: 100%;
