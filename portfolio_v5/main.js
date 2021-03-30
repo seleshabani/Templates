@@ -44,17 +44,6 @@ const observer = new IntersectionObserver(observerCallback,options);
 contents.forEach(function (content) {
     observer.observe(content)
 })
-// function scrollApear() {  
-//     contents.forEach(function (content) {
-//         let contentPosition = content.getBoundingClientRect().top;
-//         let screenPosition = window.innerHeight /2;
-
-//         if (contentPosition < screenPosition) {
-//             content.classList.add('content-appear');
-//         }
-//     })
-// }
-// window.addEventListener('scroll',scrollApear);
 
 window.addEventListener('load',function () {
     contents[0].classList.add('content-appear');
