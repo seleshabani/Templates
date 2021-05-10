@@ -196,16 +196,18 @@ main section .content .reals-img .item img{
     height: 100%;
 }
 main section .content .reals-img .item a{
-    width: 30px;
+    width: max-content;
     height: 30px;
     padding: 5px;
     position: absolute;
+    gap: .3rem;
     right: 5px;
     bottom: 10px;
     background-color: var(--main-bg-color);
     color: black;
     font-size: 1em;
     display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     border-radius: 5px;
